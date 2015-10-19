@@ -1,1 +1,1 @@
-web: unicorn qandu_app.wsgi --logfile -
+web: gunicorn qandu_app.wsgi --log-file -
