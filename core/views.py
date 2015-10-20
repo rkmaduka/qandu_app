@@ -177,3 +177,4 @@ class SearchQuestionListView(QuestionListView):
     def get_queryset(self):
         incoming_query_string = self.request.GET.get('query', '')
         return Question.objects.filter(title_icontains=incoming_query_string)
+        paginate_by = 5
